@@ -1,0 +1,36 @@
+body{
+    background: #f5f7f8;
+}
+
+#pagina{
+    height: 700px;
+    display: grid;
+    grid-template-areas: "cabacera cabacera"
+                        "menu cuerpo"
+                        "menu pie";
+    column-gap: 20px;
+    row-gap: 10px;
+    grid-template-rows: 200px 1fr 100px;
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-template-columns: 200px 1fr;
+}
+
+header{
+    background-color: firebrick;
+    grid-area: cabacera;
+}
+
+nav{
+    background-color: cadetblue;
+    grid-area: menu;
+}
+
+section{
+    background-color: mediumorchid;
+    grid-area: cuerpo;
+}
+
+footer{
+    background-color: rgb(107, 107, 206);
+    grid-area: pie;
+}
